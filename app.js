@@ -58,14 +58,8 @@
         correctAnswer: "a"   
         }
     ];
-   
-    setTimeout(timeUp, 1000 * 30);
-function timeUp() {
-    showResults();
-    setInterval()
-}
 
-    let time = 5;
+    let time = 10;
     let timeId;
 
     function buildQuiz() {
@@ -78,7 +72,7 @@ function timeUp() {
 //Run Time==============================
     function run() {
     timeId = setInterval(decrement, 1000);    
-    setInterval((showNextSlide), 5*1000)
+    setInterval((showNextSlide), 10*1000)
             }
             run();
 
@@ -136,9 +130,7 @@ function showResults(){
                     correct++;
                     answerContainers[questionNumber].style.color = 'green';
                 }
-            // else if (userAnswer != currentQuestion.correctAnswer) {
-            //         answerContainers[questionNumber].style.color = 'red';  
-            // }   
+             
                 });   
     
     resultsContainer.innerHTML = `${correct} correct out of  ${myQuestions.length}`;
@@ -161,7 +153,7 @@ function showResults(){
 
   //=======================================================================
   function showNextSlide() {
-    let time = 5;
+    let time = 10;
     let timeId;
 
     timeId = setInterval(decrement, 1000);
