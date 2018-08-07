@@ -1,0 +1,92 @@
+h1, h2 {
+    font-family: 'Hanalei Fill', cursive;
+    font-size: 36pt;
+    color: black;
+    text-shadow: 3px 2px 2px chocolate;
+    font-weight: 200;
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+h2 {
+    font-size: 26pt;
+}
+.container {
+    display: block;
+    position: relative;
+}
+.quiz {
+    position: relative;
+    text-align: center;
+    height: 400px;
+    color: blanchedalmond;
+    text-shadow: 3px 2px 2px black;
+    font-size: 16pt;
+}
+.results {
+    position: relative;
+    width: 100px;
+    height: 60px;
+    font-size: 24pt;
+    font-family: 'Hanalei Fill', cursive;
+    text-shadow: 2px 2px chocolate;
+}
+.timer {
+    position: relative;
+    margin: 0 auto;
+    color: gold;
+    text-shadow: 2px 2px black;
+    width: 100px;
+    height: 60px;
+    font-size: 36pt;
+    text-align: center;
+    bottom: 110px;
+    z-index: 1;
+   
+}
+.btn {
+    position: relative;
+    width: 80px;
+    height: 50px;
+    padding: 5px 10px;
+    display: inline-block;
+    left: 40%;
+}
+.compass {
+    width: 150px;
+    height: 130px;
+    position: relative;
+    margin: auto;
+    left: 43.5%;
+
+}
+.slide {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+   z-index: 1;
+   opacity: 0;
+   transition: opacity 2s;
+}
+.active-slide {
+    opacity: 1;
+    z-index: 2;
+}
+.quiz-container {
+    position: relative;
+    margin-top: 40px;
+}
+.question {
+    font-size: 28pt;
+}
+.answers {
+    display: inline-block;
+    font-size: 24pt;
+    text-align: left;
+    padding-top: 20px;
+}
+.answers label {
+    display: block;
+}
