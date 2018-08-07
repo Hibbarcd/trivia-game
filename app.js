@@ -136,9 +136,9 @@ function showResults(){
                     correct++;
                     answerContainers[questionNumber].style.color = 'green';
                 }
-            else if (userAnswer != currentQuestion.correctAnswer) {
-                    answerContainers[questionNumber].style.color = 'red';  
-            }   
+            // else if (userAnswer != currentQuestion.correctAnswer) {
+            //         answerContainers[questionNumber].style.color = 'red';  
+            // }   
                 });   
     
     resultsContainer.innerHTML = `${correct} correct out of  ${myQuestions.length}`;
